@@ -1,0 +1,158 @@
+/* General */
+.container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Hace el logo circular */
+}
+
+.title {
+  flex-grow: 1;          /* Permite que el título ocupe todo el espacio disponible */
+  text-align: center;    /* Centraliza el texto */
+  margin: 0;  
+}
+
+.btnLogout {
+  background-color: #f44336;
+  font-size: 20px;
+  color: #f4f6f9;
+  border-radius: 15px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btnLogout:hover {
+  background-color: #c82333;
+}
+
+/* Dashboard Section */
+.dashboardContainer {
+  padding: 60px;
+  background-color: white;
+  margin: 50px 100px;
+  border-radius: 10px;
+  max-width: 10000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 60px;
+  background-color: #4CAF50;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.buttonsContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btnAction {
+  background-color: #008CBA;
+  color: white;
+  padding: 12px 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnAction:hover {
+  background-color: #007B9F;
+}
+
+/* Incapacity History Section */
+.historySection {
+  margin-top: 40px;
+}
+
+.historySection h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.historySection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.historyItem {
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #4CAF50;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Espaciado entre las columnas */
+}
+
+.historyDate, .historyType {
+  display: inline-block;
+  max-width: 100px; /* Limitar el ancho de cada columna */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Añadir puntos suspensivos si el contenido es demasiado largo */
+}
+
+.historyJustification{
+  display: inline-block;
+  min-width: 250px; /* Limitar el ancho de cada columna */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Añadir puntos suspensivos si el contenido es demasiado largo */
+}
+
+.historyDate {
+  font-weight: bold;
+  color: #333;
+}
+
+.historyType {
+  color: #4CAF50;
+}
+
+.historyJustification {
+  font-style: italic;
+  color: #555;
+}
+
+/* Empty state text */
+p {
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}

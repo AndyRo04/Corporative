@@ -1,0 +1,67 @@
+/* Estilo para el logo */
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hace el logo circular */
+  }
+  
+  /* Estilo para el encabezado */
+  header {
+    background-color: #007bff;
+    color: white;
+    align-items: center;
+  }
+
+  header h1 {
+    flex-grow: 1;          /* Permite que el título ocupe todo el espacio disponible */
+    text-align: center;    /* Centraliza el texto */
+    margin: 0;             /* Elimina márgenes externos */
+  }
+  
+ /* Estilo para la barra de navegación */
+
+.navbar-nav {
+    width: 100%;                  
+    justify-content: space-around;
+    margin-bottom: -35px; 
+  }
+  
+  /* Estilo para cada enlace de navegación */
+  .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(216, 141, 2);
+    font-weight: 500;
+    padding: 10px 20px;           /* Padding mayor para mejor visualización */
+    margin: 0 10px;               /* Separación horizontal entre botones */
+    border-radius: 5px;           /* Bordes redondeados */
+    transition: all 0.3s ease;
+    text-align: center;           /* Asegura el centrado del texto */
+  }
+  
+  /* Efecto hover en los botones */
+  .navbar-nav .nav-link:hover {
+    background-color: rgb(185, 120, 0);
+    transform: scale(1.05);       /* Efecto de aumento al pasar el cursor */
+  }
+  
+  
+  /* Botón de cerrar sesión */
+  .btn-danger {
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Contenedor de contenido */
+  .container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow:  4px 8px rgba(3, 120, 124, 0.1);
+  }
+  

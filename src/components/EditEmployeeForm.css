@@ -1,0 +1,78 @@
+/* Contenedor principal del formulario */
+form {
+    max-width: 900px;  /* Aumentamos aún más el ancho máximo del formulario */
+    margin: 20px 200px;
+    padding: 40px;     /* Aumentamos el padding para dar más espacio interno */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0.5, 5, 5, 0.5);
+  }
+  
+  /* Título del formulario */
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;   /* Aumentamos el tamaño del título */
+    margin-bottom: 40px;  /* Mayor separación con respecto a los campos */
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px; /* Se aumenta el espacio entre etiqueta y campo */
+  }
+  
+  /* Campos de entrada */
+  input[type="text"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+    padding: 18px;      /* Aumentamos el padding para que los campos sean más grandes */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 25px; /* Aumentamos la separación entre los campos */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Enfoque de los campos de entrada */
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Estilo para el botón de guardar */
+  button[type="button"] {
+    width: 100%;
+    padding: 18px;     /* Aumentamos el padding para que el botón sea más grande */
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;    /* Aumentamos el tamaño de fuente */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto hover en el botón de guardar */
+  button[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Espaciado entre los campos */
+  div > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px; /* Aumentamos la separación entre los campos */
+  }
+  
+  /* Ajuste de márgenes entre campos */
+  div > div input {
+    margin-bottom: 20px;
+  }
+  

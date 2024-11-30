@@ -1,0 +1,140 @@
+/* Estilos generales */
+.container-fluid {
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .logo {
+    width: 50px;
+  }
+  
+  .title {
+    flex: 1;
+    text-align: center;
+  }
+  
+/* Formulario de búsqueda */
+.search-container {
+    margin: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-container input {
+    width: 5%;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employee-list,
+  .general-list {
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-list ul,
+  .general-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  strong {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  em {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  
+
+.button-group {
+    display: flex; 
+    justify-content: flex-start;
+    gap: 10px; 
+    margin-top: 10px; 
+    width: auto; 
+  }
+  
+  
+  .button-group button {
+    flex-grow: 1; 
+    max-width: 160px;
+    padding: 10px; 
+    border: none;
+    text-align: center; 
+    white-space: nowrap; 
+    min-width: 120px;
+  }
+  
+  /* Estilos de cada botón */
+  .button-group button:first-child {
+    background-color: #28a745; /* Verde para entrada */
+  }
+  
+  .button-group button:nth-child(2) {
+    background-color: #dc3545; /* Rojo para salida */
+  }
+  
+  .button-group button:last-child {
+    background-color: #ffc107; /* Amarillo para ver historial */
+  }
+  
+  /* Estilo de los botones en estado hover */
+  .button-group button:hover {
+    opacity: 0.8;
+  }
+  
+/* Mostrar historial */
+.history-list {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  .history-list li {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+

@@ -1,0 +1,73 @@
+  
+  /* Título */
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para la lista de empleados */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo para cada ítem de empleado */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  /* Estilo para el texto del nombre y puesto */
+  li span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilo para el botón Editar */
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para el botón Eliminar */
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+  
+  /* Mensaje en caso de que no haya empleados */
+  li.no-employees {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  
