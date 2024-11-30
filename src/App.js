@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
@@ -91,10 +92,37 @@ function App() {
       </Routes>
       {/* Botón para restablecer el localStorage */}
       <ResetLocalStorageButton />
+=======
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import AdminPage from "./pages/AdminPage";
+import EmpleadoPage from "./pages/EmpleadoPage";
+import HistorialIngreso from "./components/HistorialIngreso";
+import HomePage from "./pages/HomePage";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Página de inicio: siempre mostrará el Login primero */}
+        <Route path="/" element={<Login />} />
+
+        {/* Rutas individuales para cada rol */}
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/empleado" element={<EmpleadoPage />} />
+        <Route path="/HistorialIngreso" element={<HistorialIngreso />} />
+        <Route path="/home" element={<HomePage />} />
+
+        {/* Redirigir rutas no encontradas al Login */}
+        <Route path="*" element={<Login />} />
+      </Routes>
+>>>>>>> e3c327cb09937da442dc8f8980e9b818841af581
     </Router>
   );
 }
 
+<<<<<<< HEAD
 function ResetLocalStorageButton() {
   const handleReset = () => {
     localStorage.clear(); // Borra todos los datos del localStorage
@@ -121,4 +149,6 @@ function ResetLocalStorageButton() {
   );
 }
 
+=======
+>>>>>>> e3c327cb09937da442dc8f8980e9b818841af581
 export default App;
